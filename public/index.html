@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
+    <title>Revolución Marketing | WE ARE CREATIVE. WE ARE STRATEGIC. WE OVER-DELIVER.</title>
+     <!--Font awesome CDN-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+     <!--Scroll reveal CDN-->
+     <script src="https://unpkg.com/scrollreveal"></script>
+     <link rel="stylesheet" href="styles.css">
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/8.0.1/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -22,7 +26,7 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
+    
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
@@ -38,52 +42,137 @@
       }
     </style>
   </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+  <body class>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo"><img src="images/r-red.png" alt=""></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Why Revolucion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Our Handiwork</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Header ends-->
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2 class="sub-headline">
+                <span class="first-letter">W</span>elcome
+            </h2>
+            <h1 class="headline">Revolución Marketing</h1>
+            <div class="headline-description">
+                <div class="separator">
+                    <div class="line line-left"></div>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <div class="line line-right"></div>
+                </div>
+                <div class="single-animation">
+                    <h5>Ready to be opened</h5>
+                    <a href="#" class="btn cta-btn">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero ends -->
+    <section class="discover-who-we-are">
+        <div class="container">
+            <div class="revolucion-info">
+                <div class="revolucion-description padding-right animate-left">
+                    <div class="global-headline">
+                      <h2 class="sub-headline">
+                          <span class="first-letter">D</span>iscover
+                      </h2>
+                      <h1 class="headline headline-dark">Who We Are</h1>
+                      <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>
+                      Revolución Marketing is a full service, experiential and entertainment agency that specializes in the creation, management and execution of unique music programs that resonate with the Hispanic consumer.
+                    </p>
+                    <a href="#" class="btn body-btn">About Us</a>
+                </div>
+                <div class="revolucion-info-img animate-right">
+                    <img src="images/revolucion-info-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Discover who we are ends -->
+    <!-- <section class="some-of-our-work between">
+        <div class="container">
+          <div class="global-headline">
+            <div class="animate-top">
+                <h2 class="sub-headline">
+                <span class="first-letter">H</span>ighlights
+                </h2>
+            </div> 
+            <div class="animate-bottom">
+              <h1 class="headline">Of Our Work</h1>
+            </div>
+          </div>
+        </div>
+    </section> -->
+    <section class="some-of-our-work">
+        <div class="container-soow">
+            <img src="images/music-festival-1.jpg" alt="" class="image" style="width:100%">
+                <div class="middle">
+                    <div class="global-headline">
+                        <div class="animate-top">
+                            <h2 class="sub-headline">
+                            <span class="first-letter">H</span>ighlights
+                            </h2>
+                        </div>
+                        <div class="animate-bottom">
+                            <h1 class="headline">Of Our Work</h1>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- some of our work ends -->
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer-content animate-bottom">
+                <div class="social-media">
+                    <h4>Follow along</h4>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="main.js"></script>
+</body>
 </html>
